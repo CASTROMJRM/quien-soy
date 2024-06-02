@@ -1,0 +1,192 @@
+
+/*este es estilos son para el index*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+body{
+    background-image: url(Imagines/imagen_contenedor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.contenedor{
+    min-height: 88px;
+    background: linear-gradient(90deg, rgb(7, 62, 48)0%,
+    rgba(80,49,145,1)70%);
+}
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #DEDEDE;
+    display: block;
+    font-weight: bold;
+}
+.menu .navbar ul li a:hover{
+    color: #ffffff;
+}
+#menu {
+    display: none;
+
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px){
+    .contenedor{
+        min-height: 70px;
+    }
+    .menu{
+        top: 0;
+        padding: 20px;
+    }
+    menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(90deg, rgba(203, 18, 133,1)0%,
+    rgba(80,49,145,1)70%);
+    display: none;
+    }
+    .menu .navbar ul li{
+        width:100% ;
+    }
+    #menu:checked ~.navbar{
+        display: initial;
+    }
+}
+/*este es estilos son para la pagina de deportes*/
+.Tabla{
+    border: 3px solid rgb(120, 100, 50);
+    margin: 25px 0;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 500px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.15);
+    position: relative;
+    top: 60px;
+    left: 140px;
+    width: 80%;
+    
+}
+.Tabla thead tr{
+    background-color: rgb(3, 41, 31);
+    color: #DEDEDE;
+}
+.Tabla th, .Tabla td{
+    padding: 12px 15px;
+
+}
+.Tabla tbody tr:nth-of-type(even) {
+    background-color: rgb(230, 230, 230);
+}
+/*seccion de inicio*/
+.perfil{
+    
+    transform: translate(600px, 90px);
+    border-radius: 80%;
+}
+.letras{
+    
+    left: 200px;
+    position: absolute;
+    font-family: "Alumni Sans", sans-serif;
+    padding:  0 110px;
+    bottom: 32%;
+}
+.letras h1 {
+    text-align: center;
+    font-size: 2.6rem;
+}
+.letras h2{
+    text-align: center;
+    font-size: 1.4rem;
+}
+.letras p {
+    text-align: center;
+    font-size: 1em;
+}
+/*estilo del pie de pagina*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.letras .color {
+    text-align: center;
+   
+}
+/* seccion de estudios*/
+.section {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #040404;
+}
+.section img {
+    max-width: 100%;
+    height: auto;
+}
+.section p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
